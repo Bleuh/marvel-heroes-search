@@ -1,10 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Card from '../Card/card.component';
 
-class List extends React.Component {
-  render() {
-    return <h1>List here <Card/><Card/><Card/><Card/></h1>;
-  }
+const List = ({heroes}) => {
+  return (
+    <div>
+      {
+        heroes.map((hero, index) => (
+          <li key={index}><Card hero={hero}/></li>
+        ))
+      }
+    </div>
+  );
+}
+
+List.propTypes = {
+  heroes: PropTypes.array,
 }
 
 export default List;

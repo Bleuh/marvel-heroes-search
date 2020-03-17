@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '../Card/card.component';
+import './list.css';
 
 const List = ({heroes}) => {
   return (
-    <div>
+    <div className="list-heroes">
       {
         heroes.map((hero, index) => (
-          <li key={index}><Card hero={hero}/></li>
+          <Card hero={hero} key={index}/>
         ))
       }
     </div>

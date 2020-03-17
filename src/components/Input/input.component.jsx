@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './input.css';
 
 class Input extends React.Component {
   constructor(props) {
@@ -19,14 +20,14 @@ class Input extends React.Component {
     this.setState({
       query: query,
       timeout: setTimeout(() => {
-        this.state.findHeroes();
+        this.state.findHeroes(query);
       }, 500),
     });
   }
 
   render() {
     return (
-      <div>
+      <div className="input-container">
         <input id="hero-query" type="text" placeholder="nom d'un super hero" name="hero-query" onChange={this.handleChange} value={this.state.query}/>
       </div>
     );

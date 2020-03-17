@@ -1,0 +1,8 @@
+.list-heroes {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

@@ -1,0 +1,11 @@
+.single-hero {
+  margin: 10px 15em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.single-hero img {
+  height: 60vh;
+  width: 100%;
+  object-fit: contain;
+}

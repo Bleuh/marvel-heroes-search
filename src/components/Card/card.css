@@ -1,0 +1,17 @@
+.card-hero {
+  flex: 0 1 20%;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-hero img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.card-hero h1 {
+  font-size: x-large;
+}

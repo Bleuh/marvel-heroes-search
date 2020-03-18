@@ -1,0 +1,21 @@
+.input-container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.input-container input {
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  border: ;
+  display: block;
+  transition: all 0.3s;
+}

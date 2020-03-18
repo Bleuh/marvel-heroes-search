@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './input.css';
 
-class Input extends React.Component {
+class InputComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -34,10 +34,10 @@ class Input extends React.Component {
   }
 }
 
-Input.propTypes = {
+InputComponent.propTypes = {
   query: PropTypes.string,
   findHeroes: PropTypes.func,
   isTimeout: PropTypes.func
 }
 
-export default Input;
+export default InputComponent;
